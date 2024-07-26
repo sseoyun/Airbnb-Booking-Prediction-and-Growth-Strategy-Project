@@ -210,3 +210,26 @@ host_response_timewithin a day인 하루 안으로 답장하는 경우가 아닌
 room_typeHotel room인 숙소유형이 호텔인 경우가 아닌 경우보다 
 room_typeShared room인 숙소 유형이 여러 사람이 함께 쓰는 경우가 아닌 경우보다 
 accommodates인 최대 수용 인원 수가 많을수록 슈퍼호스트일 확률이 낮을 것이라고 해석할 수 있다. 
+
+# 📝추가 분석
+“숙소 후기 평점이 4.8 이상인데 왜 슈퍼호스트가 아닐까?”라는 추가 궁금증이 들어 숙소 후기 평점이 4.8 이상인 데이터만 추출해 추가 분석을 진행해보았다. <br>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1ed21442-8b3c-4f8b-a43c-510596fb75bf" alt="그래프 1" />
+</p>
+호스트의 응답률을 나타내는 host_response_rate가 슈퍼호스트가 아닌 경우 평균이 훨씬 낮은 것을 보아 응답률이 낮아서 슈퍼호스트가 안 된 것으로 추측할 수 있다. <br>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4d2b6d90-ace5-4005-9c66-7539a5675cf6" alt="그래프 2" />
+</p>
+더불어 숙소가 제공하는 편의시설이나 물품 개수를 나타내는 ammenities가 슈퍼호스트가 아닌 경우보다 작은 값으로 분포되어 있는 것으로 보아 물품 개수가 적어서 슈퍼호스트가 안 된 것으로 추측할 수 있다. <br>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2e8ffccf-015c-4fee-a634-8645054085ea" alt="그래프 3" />
+</p>
+화장실당 수용 인원 수를 나타내는 변수 bathrooms_text에서도 슈퍼호스트인 경우 좀 더 화장실당 인원이 적은 것을 볼 수 있다. <br>
+
+
+
+
+
